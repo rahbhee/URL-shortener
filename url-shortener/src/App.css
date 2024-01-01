@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+main{
+  width: 65rem;
+  margin: auto;
+}
+.header-section{
+  border-bottom: 1px solid #fff;
+  padding-bottom: 7rem;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.form-section{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 52rem;
+}
+nav div:nth-child(1), 
+nav div:nth-child(2){
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1{
+  color: hsl(260, 8%, 14%);
+  font-size: 3.8rem;
+  font-weight: 900;
+  line-height: 4.5rem;
+  text-shadow: 3px 0 hsl(260, 8%, 14%);
+}
+nav h5{
+  font-size: 1.55rem;
+  font-weight: 900;
+  margin-right: 2.5rem;
+  color: hsl(260, 8%, 14%);
+  text-shadow: 1px 0 hsl(260, 8%, 14%);
+}
+nav p{
+  color: hsl(257, 7%, 63%);
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-right: 2rem;
+}
+button{
+  border-radius: 1.5rem;
+  border: none;
+  background-color: hsl(180, 66%, 49%);
+  font-size: .85rem;
+  color: #fff;
+  font-weight: bold;
+}
+nav button{
+  padding: .7rem 1.7rem;
+}
+article button{
+  padding: .8rem 1.8rem;
+}
+header article{
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+}
+header article div{
+  width: 27.5rem;
+  margin-right: 2.5rem;
+}
+header article img{
+  margin-left: 2.5rem;
+}
+header article div p{
+  color: hsl(257, 7%, 63%);
+  font-weight: 650;
+  line-height: 2rem;
+  margin-top: .4rem;
+  margin-bottom: 1.5rem;
+}
+.form-section div{
+  background-color:  hsl(257, 27%, 26%);
+  width: 100%;;
+}
+@media query 
