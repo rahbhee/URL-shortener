@@ -1,7 +1,9 @@
 import './App.css';
 import work from '/illustration-working.svg';
+import FormSection from './formsection'
 
 function HeaderSection(){
+
     return(
 <header>
     <nav>
@@ -25,7 +27,6 @@ function HeaderSection(){
       <img src={work} width="550"/>
     </article>
 </header>
-   
     )
 }
 

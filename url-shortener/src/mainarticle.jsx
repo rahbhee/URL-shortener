@@ -1,16 +1,17 @@
 import HeaderSection from './headersection';
 import FormSection from './formsection';
+import AboutSection from './aboutsection';
 import './App.css';
 
 function MainArticle(){
     return (
+        <>
         <main>
-          <section className='header-section'>
-                <HeaderSection/>
-            </section>
-              <FormSection/>
+            <HeaderSection/>
+            <FormSection/>
+            <AboutSection/>
         </main>
-          
+         </>
     )
 }
 export default MainArticle;

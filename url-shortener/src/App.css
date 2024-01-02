@@ -4,30 +4,19 @@
 }
 body{
   font-family: 'Poppins', sans-serif;
-  justify-content: center;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 main{
-  width: 65rem;
-  margin: auto;
-}
-.header-section{
-  border-bottom: 1px solid #fff;
-  padding-bottom: 7rem;
-  display: flex;
   justify-content: center;
-  margin: auto;
 }
 .form-section{
   display: flex;
   justify-content: center;
-  margin: auto;
 }
 nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 52rem;
 }
 nav div:nth-child(1), 
 nav div:nth-child(2){
@@ -35,12 +24,38 @@ nav div:nth-child(2){
   justify-content: space-between;
   align-items: center;
 }
+nav div:nth-child(2){
+  padding-right: 12rem;
+}
+header{
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
 header h1{
   color: hsl(260, 8%, 14%);
   font-size: 3.8rem;
   font-weight: 900;
   line-height: 4.5rem;
   text-shadow: 3px 0 hsl(260, 8%, 14%);
+}
+header article{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 4rem;
+}
+header article div{
+  width: 27.5rem;
+  margin-right: 2.5rem;
+}
+header article img{
+  margin-left: 2.5rem;
+}
+header article div p{
+  color: hsl(257, 7%, 63%);
+  font-weight: 650;
+  line-height: 2rem;
+  margin-top: .4rem;
+  margin-bottom: 1.5rem;
 }
 nav h5{
   font-size: 1.55rem;
@@ -69,27 +84,44 @@ nav button{
 article button{
   padding: .8rem 1.8rem;
 }
-header article{
-  display: flex;
-  align-items: center;
-  margin-top: 4rem;
-}
-header article div{
-  width: 27.5rem;
-  margin-right: 2.5rem;
-}
-header article img{
-  margin-left: 2.5rem;
-}
-header article div p{
-  color: hsl(257, 7%, 63%);
-  font-weight: 650;
-  line-height: 2rem;
-  margin-top: .4rem;
-  margin-bottom: 1.5rem;
-}
-.form-section div{
+.form-section{
   background-color:  hsl(257, 27%, 26%);
-  width: 100%;;
+  width: 75%;
+  padding: 2rem 1rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  border-radius: .5rem;
+  position: relative;
+  top: 3.5rem;
+  display: flex;
 }
-@media query 
+.form-section input{
+  width: 32rem;
+  margin-right: 1rem;
+  padding: 1rem 1.5rem;
+  font-size: .85rem;
+  border-radius: .5rem;
+}
+.form-section button{
+  width: 10rem;
+  margin-left: 1rem;
+  padding: 1rem;
+  border-radius: .5rem;
+}
+.about-section{
+  background-color: hsl(249, 16%, 92%);
+  padding-top: 5rem;
+  align-content: center;
+}
+.about-section div:first-of-type {
+ 
+}
+
+/*Media Query for Tablets*/
+
+
+@media (max-width: 480px){
+  .hide-nav{
+    display: none;
+  }
+}
