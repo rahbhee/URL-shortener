@@ -5,13 +5,11 @@
 body{
   font-family: 'Poppins', sans-serif;
   margin-top: 2rem;
+  display: grid;
 }
 main{
   justify-content: center;
-}
-.form-section{
-  display: flex;
-  justify-content: center;
+  margin: auto;
 }
 nav{
   display: flex;
@@ -39,8 +37,7 @@ header h1{
   text-shadow: 3px 0 hsl(260, 8%, 14%);
 }
 header article{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   margin-top: 4rem;
 }
 header article div{
@@ -49,6 +46,8 @@ header article div{
 }
 header article img{
   margin-left: 2.5rem;
+  margin: auto;
+  width: 550px;
 }
 header article div p{
   color: hsl(257, 7%, 63%);
@@ -85,7 +84,7 @@ article button{
   padding: .8rem 1.8rem;
 }
 .form-section{
-  background-color:  hsl(257, 27%, 26%);
+  background-color: hsl(257, 27%, 26%);
   width: 75%;
   padding: 2rem 1rem;
   margin-right: 5rem;
@@ -94,6 +93,7 @@ article button{
   position: relative;
   top: 3.5rem;
   display: flex;
+  justify-content: center;
 }
 .form-section input{
   width: 32rem;
@@ -110,18 +110,81 @@ article button{
 }
 .about-section{
   background-color: hsl(249, 16%, 92%);
-  padding-top: 5rem;
+  padding-top: 10rem;
   align-content: center;
 }
 .about-section div:first-of-type {
- 
+ text-align: center;
+ width: 29rem;
+ margin: auto;
 }
 
 /*Media Query for Tablets*/
 
 
-@media (max-width: 480px){
+@media (max-width: 720px){
+  body{
+    text-align: center;
+  }
+  main{
+    width: 30rem;
+  }
+  nav{
+    display: block;
+  }
   .hide-nav{
     display: none;
+  }
+  header{
+    padding-right: 0;
+    padding-left: 0;
+  }
+  header article{
+    flex-direction:column-reverse;
+    align-items: center;
+  }
+  header h1{
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  header article div{
+   width: 25rem;
+   margin: auto;
+  }
+  header article div p{
+    font-size: 1.4rem;
+  }
+  header article img{
+    width: 450px;
+  }
+  header article button{
+    width: 60%;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+  }
+  .form-section{
+    width: 22rem;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+    top: 5.5rem;
+  }
+  .form-section input{
+    width: 18rem;
+    padding: 1.3rem;
+    margin: auto;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  .form-section button{
+    width: 20.7rem;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    margin: auto;
+  }
+  .about-section div:first-of-type{
+    width: 20rem;
   }
 }

@@ -24,7 +24,7 @@ function HeaderSection(){
         <p>Build your brand’s recognition and get detailed insights on how your links are performing.</p>
         <button>Get Started</button>
       </div>
-      <img src={work} width="550"/>
+      <img src={work}/>
     </article>
 </header>
     )
