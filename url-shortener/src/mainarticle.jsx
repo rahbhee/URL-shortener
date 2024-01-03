@@ -2,6 +2,7 @@ import HeaderSection from './headersection';
 import FormSection from './formsection';
 import AboutSection from './aboutsection';
 import LinkSection from './linksection';
+import Footer from './footer';
 import './App.css';
 
 function MainArticle(){
@@ -13,6 +14,7 @@ function MainArticle(){
             <AboutSection/>
         </main>
             <LinkSection/>
+            <Footer/>
          </>
     )
 }

@@ -1,6 +1,6 @@
 import iconbrand from '/icon-brand-recognition.svg';
 import icondetail from '/icon-detailed-records.svg';
-import iconcustomize from '/icon-fully-customizable.svg'
+import iconcustomize from '/icon-fully-customizable.svg';
 
 function AboutSection(){
     return(
