@@ -119,15 +119,13 @@ article button{
  margin: auto;
 }
 
+
 /*Media Query for Tablets*/
 
 
 @media (max-width: 720px){
   body{
     text-align: center;
-  }
-  main{
-    width: 30rem;
   }
   nav{
     display: block;
