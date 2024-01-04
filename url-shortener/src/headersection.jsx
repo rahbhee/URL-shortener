@@ -1,23 +1,12 @@
 import './App.css';
 import work from '/illustration-working.svg';
-import FormSection from './formsection'
+import NavBar from './navbar'
 
 function HeaderSection(){
 
     return(
 <header>
-    <nav>
-    <div>
-      <h5>Shortly</h5>
-      <p>Features</p>
-      <p>Pricing</p>
-      <p>Resources</p>
-    </div>
-    <div>
-      <p>Login</p>
-      <button>Sign Up</button>
-    </div>
-    </nav>
+  <NavBar/>
     <article>
       <div>
         <h1>More than just shorter links</h1>
