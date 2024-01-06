@@ -1,6 +1,7 @@
 import React from 'react';
 
 function FormSection (){
+
     return(
         <section className="form-section">
             <div>
@@ -9,5 +10,6 @@ function FormSection (){
             </div>
         </section>
     )
+    
 }
 export default FormSection;

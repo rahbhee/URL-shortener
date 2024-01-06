@@ -1,4 +1,5 @@
 import hamburger from '/hamburger.svg';
+import Hamburger from './hamburger'
 import React, { useState, useEffect } from 'react';
 
 function NavBar(){
@@ -20,7 +21,7 @@ function NavBar(){
     <div className="nav-div">
     <h5>Shortly</h5>
     <nav>
-         {windowWidth <=768 ? (<img src={hamburger}/>) : (<>
+         {windowWidth <=768 ? (<Hamburger/>) : (<>
     <div>
       <p>Features</p>
       <p>Pricing</p>
