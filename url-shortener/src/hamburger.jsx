@@ -19,9 +19,10 @@ function Hamburger (){
                     <li>Pricing</li>
                     <li>Resources</li>
                 </ul>
+                <div className="nav-line"></div>
                 <ul id="menu2">
                     <li>Login</li>
-                    <li>Sign Up</li>
+                    <li><button>Sign Up</button></li>
                 </ul>
             </div> : ""}
            
