@@ -104,14 +104,15 @@ article button{
   background-image: url("/bg-boost-desktop.svg");
   width: 75%;
   padding: 2rem 1rem;
-  margin-right: 5rem;
-  margin-left: 5rem;
-  border-radius: .5rem;
-  position: relative;
-  top: 3.5rem;
+  margin: auto;
+  border-radius: .5rem;;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  position: relative;
+  top: 3.5rem;
 }
+
 .form-section input{
   width: 32rem;
   margin-right: 1rem;
@@ -122,11 +123,37 @@ article button{
   outline: none;
   box-shadow: none;
 }
-.form-section button{
+.form-section-button{
   width: 10rem;
   margin-left: 1rem;
   padding: 1rem;
   border-radius: .5rem;
+}
+.resut{
+  background-color: #fff;
+}
+.alert{
+  display: none;
+  color: red;
+  font-style: italic;
+  margin: 0;
+  text-align: left;
+}
+.url_display{
+  display: flex;
+  justify-content:space-between;
+  width: 75%;
+  margin: auto;
+  position: relative;
+  top: 19rem;
+  background-color: #fff;
+  padding: 1rem 2rem;
+}
+.right{
+  display: flex;
+}
+.show-alert{
+  display: block;
 }
 .about-section{
   background-color: hsl(249, 16%, 92%);
@@ -348,15 +375,24 @@ footer div p{
     border-radius: 2rem;
   }
   .form-section{
+    top: 5.5rem;
+  }
+  .form-section{
     width: 22rem;
     align-items: center;
     margin: 0 auto;
     padding: 1rem;
-    top: 5.5rem;
+    flex-direction: column;
+  }
+  .url_display{
+    top: 8rem;
+    font-size: .85rem;
+    flex-direction: column;
   }
   .form-section input{
     width: 18rem;
     padding: 1.3rem;
+  
     margin: auto;
     margin-right: 0;
     margin-bottom: 1rem;
@@ -367,6 +403,9 @@ footer div p{
     padding: 1.2rem;
     font-size: 1.2rem;
     margin: auto;
+  }
+  .url_display{
+
   }
   .about-section .about-flex{
     flex-direction: column;

@@ -12,7 +12,7 @@ function Hamburger (){
 
     return(
         <>
-           {navIsOpen ? <i class="fa-solid fa-xmark" onClick={toggleNav}></i> : <i class="fa-solid fa-bars" onClick={toggleNav}></i>} 
+           {navIsOpen ? <i className="fa-solid fa-xmark" onClick={toggleNav}></i> : <i className="fa-solid fa-bars" onClick={toggleNav}></i>} 
            {navIsOpen ? <div className="mobile-nav">
                 <ul id="menu1">
                     <li>Features</li>
