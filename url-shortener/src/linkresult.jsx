@@ -18,7 +18,8 @@ export default function ShortUrlCont(props) {
   const copied = isCopied? 'copy-btn-copied':'';
 
   return (
-    <div className='url_display'>
+    <>
+     <div className='url_display'>
       <div className="longUrlCont">
         <p className="longUrl">{props.longUrl}</p>
       </div>
@@ -27,5 +28,7 @@ export default function ShortUrlCont(props) {
         <button onClick={copyShortUrl} className={`copy-btn ${copied}`}>{button}</button>
       </div>
     </div>
+    </>
+   
   )
 }

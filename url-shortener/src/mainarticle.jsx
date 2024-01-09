@@ -17,14 +17,19 @@ function MainArticle(){
         <>
         <main>
             <HeaderSection/>
+            <div className="url-container">
             <UrlShortener addUrlData={addUrlData}/>
-            {urlData.map((data,index)=>
+        <div className="urlContainer">
+          {urlData.map((data,index)=>
             <ShortUrlCont 
               key={index}
               shortUrl={data.shortUrl} 
               longUrl={data.url}
             />
           )}
+        </div>
+            </div>
+           
             <AboutSection/>
             <LinkSection/>
         </main>

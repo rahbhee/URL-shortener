@@ -1,5 +1,5 @@
 async function createShortUrl(longUrl){
-    const apikey = "53122cfd9ccf44fe9b40fc48dbf1f94f";
+    const apikey = "89687bdb8d85440ab7ff0daa35bab4ff";
     const apiUrl = `https://api.rebrandly.com/v1/links/new?apikey=${apikey}&destination=${encodeURIComponent(longUrl)}`;
     try {
         const response = await fetch(apiUrl);
