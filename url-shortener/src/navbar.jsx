@@ -23,13 +23,13 @@ function NavBar(){
     <nav>
          {windowWidth <=768 ? (<Hamburger/>) : (<>
     <div>
-      <p>Features</p>
-      <p>Pricing</p>
-      <p>Resources</p>
+      <p className='features'>Features</p>
+      <p className='pricing'>Pricing</p>
+      <p className='resources'>Resources</p>
     </div>
     <div>
-      <p>Login</p>
-      <button>Sign Up</button>
+      <p className='login'>Login</p>
+      <button className="signup">Sign Up</button>
     </div>
         </>
    )}
