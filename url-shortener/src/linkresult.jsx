@@ -24,7 +24,7 @@ export default function ShortUrlCont(props) {
         <p className="longUrl">{props.longUrl}</p>
       </div>
       <div className="right">
-        <p className="shortUrl">3334dfgvvvvvvvvvvvubbby</p>
+        <p className="shortUrl">{props.shortUrl}</p>
         <button onClick={copyShortUrl} className={`copy-btn ${copied}`}>{button}</button>
       </div>
     </div>
